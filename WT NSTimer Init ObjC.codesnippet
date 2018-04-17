@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>timerinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 开始计时器
+ */
+- (void)startTimer{
+    [self endTimer];
+    
+    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(dealTimer:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+    
+}
+
+/**
+ 结束计时器
+ */
+- (void)endTimer{
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
+
+- (void)dealTimer:(NSTimer *)timer{
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>30AAF030-939B-4BD9-B752-F128A8C1565F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>NSTimer Func OBjC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSTimer Func OBjC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

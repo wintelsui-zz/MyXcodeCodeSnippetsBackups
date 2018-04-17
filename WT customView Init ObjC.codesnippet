@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>customviewinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#customView#&gt; = ({
+&lt;#customClassView#&gt; *view = [[&lt;#customClassView#&gt; alloc] init];
+[view setBackgroundColor:[UIColor clearColor]];
+
+view;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A1D2D421-03BC-4DCE-9C60-A2AD8632B168</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>customView Init Objc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>customView Init Objc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

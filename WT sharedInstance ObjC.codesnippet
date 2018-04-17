@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>shared</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static &lt;#Class#&gt; * _instance;
++ (instancetype)sharedInstance;
+
++ (instancetype)sharedInstance{
+    static dispatch_once_t once;
+    dispatch_once(&amp;once, ^{
+        _instance = [[[self class] alloc] init];
+        
+    });
+    return _instance;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        _instance = [super allocWithZone:zone];
+    });
+    return _instance;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0F44963D-4C91-4CFC-815C-C66844E8EE9D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>sharedInstance ObjC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sharedInstance ObjC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

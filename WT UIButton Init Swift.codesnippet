@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>btninit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#buttonName#&gt;: UIButton!
+
+if &lt;#buttonName#&gt; == nil {
+            let button = UIButton(type: .custom)
+            button.frame = CGRect(x: 0, y: 0, width: 80, height: 40)
+            button.setTitle(nil, for: .normal)
+            button.setImage(nil, for: .normal)
+            button.addTarget(self, action: #selector(&lt;#methodName#&gt;), for: .touchUpInside)
+            
+&lt;#buttonName#&gt; = button
+        }
+        
+        @objc func &lt;#methodName#&gt;() {
+            
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>86C4B453-8EDA-4F9D-BB35-4A7338844A9F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIButton Init Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton Init Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

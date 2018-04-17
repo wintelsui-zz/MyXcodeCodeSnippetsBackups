@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sharedS</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>fileprivate let &lt;#Instance#&gt;Instance = &lt;#className#&gt;()
+    
+open class var shared: &lt;#className#&gt; {
+    return &lt;#Instance#&gt;Instance
+}
+
+fileprivate override init() {
+    super.init()
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AC7A7B5B-C528-48E0-87C1-9C6CC7004AA4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>sharedInstance_Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sharedInstance_Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

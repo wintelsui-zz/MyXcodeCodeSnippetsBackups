@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>scrollinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#scrollViewName#&gt; = ({
+        UIScrollView *scrollView = [[UIScrollView alloc] init];
+    [scrollView setFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    [scrollView setBackgroundColor:[UIColor clearColor]];
+        [scrollView setScrollEnabled:YES];
+        
+        scrollView;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>51CDA811-E1B1-45B6-89C4-EEC2B58989B3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIScrollView init Objc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIScrollView init Objc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

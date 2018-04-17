@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>btninit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> &lt;#buttonName#&gt; = ({
+        UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
+     
+        [bt setBackgroundColor:[UIColor clearColor]];
+     
+        [bt.titleLabel setFont:[UIFont systemFontOfSize:16.0f]];
+        [bt setTitle:@"" forState:UIControlStateNormal];
+        [bt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
+        [bt setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [bt setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+        
+        [bt setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [bt setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+        
+        [bt setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
+        [bt setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
+        
+        [bt addTarget:self action:@selector(actionButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        bt;
+    });
+    - (void)actionButtonPressed:(id) sender{
+        
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7CB932E8-4F8E-4388-B183-547C6D796641</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIButton Init ObjC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton Init ObjC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

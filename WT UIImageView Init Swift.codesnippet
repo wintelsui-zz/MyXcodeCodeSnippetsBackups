@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>viewinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#viewName#&gt;: UIView!
+        
+        if &lt;#viewName#&gt; == nil {
+            let view = UIView(frame: CGRect(x: x, y: y, width: width, height: height))
+            view.backgroundColor = UIColor.clear
+            
+            &lt;#viewName#&gt; = view
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6835A28C-5185-490A-B487-BA9489C9DD3D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIView Init Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIView Init Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
