@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>autolayout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#object#&gt;.translatesAutoresizingMaskIntoConstraints = NO;
+    [&lt;#object#&gt;.topAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.topAnchor constant:0].active = YES;
+    [&lt;#object#&gt;.leftAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.leftAnchor constant:0].active = YES;
+    [&lt;#object#&gt;.bottomAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.bottomAnchor constant:0].active = YES;
+    [&lt;#object#&gt;.rightAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.rightAnchor constant:0].active = YES;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>39D8C096-36E7-4EFD-A90B-991D8B25560F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>xxx.topAnchor</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>autolayout ObjC topAnchor </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
