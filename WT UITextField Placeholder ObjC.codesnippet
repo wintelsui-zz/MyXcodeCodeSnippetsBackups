@@ -3,39 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedcode</string>
+	<string>ctextfplaceholder</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static &lt;#Class#&gt; * _instance;
-+ (instancetype)sharedInstance;
-
-+ (instancetype)sharedInstance{
-    static dispatch_once_t once;
-    dispatch_once(&amp;once, ^{
-        _instance = [[[self class] alloc] init];
-        
-    });
-    return _instance;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _instance = [super allocWithZone:zone];
-    });
-    return _instance;
-}</string>
+	<string>&lt;#UITextField#&gt;.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"UITextField attributedPlaceholder"
+                                                                            attributes:@{NSFontAttributeName:&lt;#UITextField#&gt;.font,
+                 NSForegroundColorAttributeName:[UIColor yellowColor]}];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F44963D-4C91-4CFC-815C-C66844E8EE9D</string>
+	<string>3ADAE820-EA54-4E08-A47A-8583647C733D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>sharedInstance ObjC</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance ObjC</string>
+	<string>textfield attributedPlaceholder</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

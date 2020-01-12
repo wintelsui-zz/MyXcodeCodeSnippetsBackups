@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ccollectiondelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//UICollectionViewDelegate,
+//UICollectionViewDataSource
+//@property (nonatomic, strong) UICollectionView * collectionView;
+
+static NSString * CollectionViewCellidentifier = @"CollectionViewCellidentifier";
+static NSString * CollectionViewHeadIdentifier = @"CollectionViewHeadIdentifier";
+
+- (UICollectionView *)collectionView{
+    if (!_collectionView) {
+        //自动网格布局
+        CGFloat kMagin = 10.0;
+        
+        UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
+        
+        
+        CGFloat itemWidth = (self.view.frame.size.width - 4 * kMagin) / 3;
+        CGFloat itemHeight = itemWidth * 250.0 / 180.0;
+        
+        //设置单元格大小
+        flowLayout.itemSize = CGSizeMake(itemWidth, itemHeight);
+        
+        //最小行间距(默认为10)
+        flowLayout.minimumLineSpacing = 10;
+        //最小item间距（默认为10）
+        flowLayout.minimumInteritemSpacing = 10;
+        //设置senction的内边距
+        flowLayout.sectionInset = UIEdgeInsetsMake(kMagin, kMagin, kMagin, kMagin);
+        //设置UICollectionView的滑动方向
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        
+        
+        //=========================================================
+        //非必要:sectionHeader/sectionFooter的大小,如果是竖向滚动，只需设置Y值。如果是横向，只需设置X值。
+        flowLayout.headerReferenceSize = CGSizeMake(0,100);
+        flowLayout.footerReferenceSize = CGSizeMake(0,100);
+        //=========================================================
+        
+        //网格布局
+        _collectionView = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+        //注册cell
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CollectionViewCellidentifier];
+        //设置数据源代理
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+        
+        //=========================================================
+        //非必要:注册header/footer
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CollectionViewHeadIdentifier];
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:CollectionViewHeadIdentifier];
+        //=========================================================
+    }
+    return _collectionView;
+}
+
+
+#pragma mark - -- UICollectionViewDataSource Start --
+
+//有多少的分组
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+    
+}
+
+//每个分组里有多少个item
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 100;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //根据identifier从缓冲池里去出cell
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellidentifier forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor orangeColor];
+    
+    return cell;
+}
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    
+    //kind有两种 一种时header 一种事footer
+    if (kind == UICollectionElementKindSectionHeader) {
+        
+        UICollectionReusableView * header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CollectionViewHeadIdentifier forIndexPath:indexPath];
+        
+        header.backgroundColor = [UIColor yellowColor];
+        
+        return header;
+        
+    }else if (kind == UICollectionElementKindSectionFooter) {
+        
+        UICollectionReusableView * header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CollectionViewHeadIdentifier forIndexPath:indexPath];
+        
+        header.backgroundColor = [UIColor blueColor];
+        
+        return header;
+    }
+    return nil;
+    
+}
+
+#pragma mark - -- UICollectionView End --
+
+#pragma mark - -- UICollectionViewDelegate Statt --
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+#pragma mark - -- UICollectionViewDelegate End --
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4CE98896-74BF-46ED-8310-C253F24BE249</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UICollectionViewDelegate DataSource ObjC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UICollectionViewDelegate DataSource ObjC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

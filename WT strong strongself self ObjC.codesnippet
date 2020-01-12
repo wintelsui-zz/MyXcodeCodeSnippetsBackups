@@ -3,39 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedcode</string>
+	<string>strongs</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static &lt;#Class#&gt; * _instance;
-+ (instancetype)sharedInstance;
-
-+ (instancetype)sharedInstance{
-    static dispatch_once_t once;
-    dispatch_once(&amp;once, ^{
-        _instance = [[[self class] alloc] init];
-        
-    });
-    return _instance;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _instance = [super allocWithZone:zone];
-    });
-    return _instance;
-}</string>
+	<string>__strong typeof(weakSelf)strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F44963D-4C91-4CFC-815C-C66844E8EE9D</string>
+	<string>A122A9CA-DB37-4A2A-B72A-80163F1A0762</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>sharedInstance ObjC</string>
+	<string>strongSelf_weakSelf</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance ObjC</string>
+	<string>strongSelf</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

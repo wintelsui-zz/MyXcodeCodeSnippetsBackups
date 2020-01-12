@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var &lt;#buttonName#&gt;: UIButton!
+	<string>private var &lt;#buttonName#&gt;: UIButton!
 
 if &lt;#buttonName#&gt; == nil {
             let button = UIButton(type: .custom)
@@ -21,7 +21,7 @@ if &lt;#buttonName#&gt; == nil {
 &lt;#buttonName#&gt; = button
         }
         
-        @objc func &lt;#methodName#&gt;() {
+        @objc private func &lt;#methodName#&gt;() {
             
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -35,6 +35,6 @@ if &lt;#buttonName#&gt; == nil {
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

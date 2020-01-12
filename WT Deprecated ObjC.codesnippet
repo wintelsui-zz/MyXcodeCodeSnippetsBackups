@@ -3,39 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedcode</string>
+	<string>deprecated</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static &lt;#Class#&gt; * _instance;
-+ (instancetype)sharedInstance;
-
-+ (instancetype)sharedInstance{
-    static dispatch_once_t once;
-    dispatch_once(&amp;once, ^{
-        _instance = [[[self class] alloc] init];
-        
-    });
-    return _instance;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _instance = [super allocWithZone:zone];
-    });
-    return _instance;
-}</string>
+	<string>__attribute__((deprecated("Use &lt;#message#&gt; instead")))</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F44963D-4C91-4CFC-815C-C66844E8EE9D</string>
+	<string>330C1771-B5AB-4E95-BCCC-DD3B78F6B299</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>sharedInstance ObjC</string>
+	<string>api deprecated </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance ObjC</string>
+	<string>api deprecated Objc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
