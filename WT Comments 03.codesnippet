@@ -9,14 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
+	<string>/*
      &lt;#info#&gt;
- 
-**/</string>
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B0FCD2DA-575A-4EFB-B75F-5BBE76E38CC8</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>/**  /n &lt;#info#&gt; /n   */</string>
 	<key>IDECodeSnippetTitle</key>

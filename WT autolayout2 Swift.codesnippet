@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>autolayout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#object#&gt;.translatesAutoresizingMaskIntoConstraints = false;
+NSLayoutConstraint.activate([
+    &lt;#view#&gt;.topAnchor.constraint(equalTo: &lt;#superview#&gt;.topAnchor, constant: &lt;#T##CGFloat#&gt;),
+    &lt;#view#&gt;.leftAnchor.constraint(equalTo: &lt;#superview#&gt;.leftAnchor, constant: &lt;#T##CGFloat#&gt;),
+    &lt;#view#&gt;.rightAnchor.constraint(equalTo: &lt;#superview#&gt;.rightAnchor, constant: &lt;#T##CGFloat#&gt;),
+    &lt;#view#&gt;.bottomAnchor.constraint(equalTo: &lt;#superview#&gt;.bottomAnchor, constant: &lt;#T##CGFloat#&gt;)
+])
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0114B0B3-7FCD-417E-A27A-7A1988837D1C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>NSLayoutConstraint.activate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>autolayout Swift 2 NSLayoutConstraint.activate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

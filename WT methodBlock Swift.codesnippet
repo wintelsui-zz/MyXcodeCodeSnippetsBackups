@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>funcblock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**&lt; &lt;#info#&gt; */</string>
+	<string>func &lt;#name#&gt;(&lt;#parameters#&gt;, completion: ((Bool, NSString?) -&gt; Void)? = nil) -&gt; &lt;#return type#&gt; {
+    &lt;#function body#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D160F03-C250-4923-B0EB-8BBB5265CC16</string>
+	<string>0C0E4741-1508-44C8-94CD-402CD14DA500</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>zzz</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>属性注释/**&lt; ~~~~*/</string>
+	<string>methodBlock Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

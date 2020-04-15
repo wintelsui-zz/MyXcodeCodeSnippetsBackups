@@ -9,10 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - TableView Delegate Start
+	<string>// MARK: - TableView Delegate Start
+
+extension &lt;#ViewController#&gt;: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -&gt; Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
@@ -20,14 +22,16 @@
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
-        return 44
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
-        let identifier = "TableViewCell"
+        let row = indexPath.row
+        
+        let identifier = "UITableViewCell"
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: identifier)
         }
         
         return cell!
@@ -35,9 +39,10 @@
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    
-    // MARK: - TableView Delegate End</string>
+}
+// MARK: - TableView Delegate End</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>08C74AF1-EB81-475B-8905-416F24126A0C</string>
 	<key>IDECodeSnippetLanguage</key>

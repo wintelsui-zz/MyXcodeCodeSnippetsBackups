@@ -6,15 +6,15 @@
 	<string>autolayout</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
 		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#object#&gt;.translatesAutoresizingMaskIntoConstraints = NO;
-    [&lt;#object#&gt;.topAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.topAnchor constant:0].active = YES;
-    [&lt;#object#&gt;.leftAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.leftAnchor constant:0].active = YES;
-    [&lt;#object#&gt;.bottomAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.bottomAnchor constant:0].active = YES;
-    [&lt;#object#&gt;.rightAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.rightAnchor constant:0].active = YES;</string>
+[&lt;#object#&gt;.topAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.topAnchor constant:0].active = YES;
+[&lt;#object#&gt;.leftAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.leftAnchor constant:0].active = YES;
+[&lt;#object#&gt;.bottomAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.bottomAnchor constant:0].active = YES;
+[&lt;#object#&gt;.rightAnchor constraintEqualToAnchor:&lt;#superobject#&gt;.rightAnchor constant:0].active = YES;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>39D8C096-36E7-4EFD-A90B-991D8B25560F</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -26,6 +26,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

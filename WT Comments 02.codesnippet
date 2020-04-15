@@ -9,11 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#info#&gt;  **/</string>
+	<string>/* &lt;#info#&gt; */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3840E02C-DEBB-4817-9506-A77FD9A5B60E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>zzz</string>
 	<key>IDECodeSnippetTitle</key>

@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>lazyvar</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**&lt; &lt;#info#&gt; */</string>
+	<string>lazy var &lt;#name#&gt;: &lt;#type#&gt; {
+    &lt;#/*code*/#&gt;
+    return &lt;#object#&gt;
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D160F03-C250-4923-B0EB-8BBB5265CC16</string>
+	<string>2B640AA2-F41B-4255-A8A0-E0618DDA91F1</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>zzz</string>
+	<string>lazy var</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>属性注释/**&lt; ~~~~*/</string>
+	<string>lazy var</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

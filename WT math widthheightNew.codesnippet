@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>heightwidthnew</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**&lt; &lt;#info#&gt; */</string>
+	<string>proportion = &lt;#widthOld#&gt; / &lt;#heightOld#&gt;;
+&lt;#heightNew#&gt; = &lt;#widthNew#&gt; / proportion;
+&lt;#widthNew#&gt; = &lt;#heightNew#&gt; * proportion;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D160F03-C250-4923-B0EB-8BBB5265CC16</string>
+	<string>C43DD01A-6138-4E75-B48F-7A92509647DF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>zzz</string>
+	<string>heightNew widthNew ---- proportion</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>属性注释/**&lt; ~~~~*/</string>
+	<string>heightNew_widthNew</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
